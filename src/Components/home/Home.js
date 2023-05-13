@@ -133,12 +133,12 @@ const Home = () => {
               /> */}
               <Row className="left">
                 <Col xs={12} md={6}>
-                  <Button className="btnWhite ">
+                  <Button href='https://opensea.io/collection/ru-yue-kisaragi' className="btnWhite ">
                     <img width="70%" height="100%" src={Opensee} alt="..." />
                   </Button>
                 </Col>
                 <Col xs={12} md={6}>
-                  <Button className="btnWhite mright">
+                  <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite mright">
                     <img width="70%" height="90%" src={Discord} alt="..." />
                   </Button>
                 </Col>
@@ -152,19 +152,19 @@ const Home = () => {
 
               <div style={{ textAlign: "left" }} className="social-icons">
                
-                <a className="ico hex4" href=" ">
-                  <i class="fa-brands fa-facebook ico3"></i>
+                <a className="ico hex4" href="https://www.tiktok.com/@guildqb">
+                  <i class="fa-brands fa-tiktok ico3"></i>
                   <div className="tooltip">Github</div>
                 </a>
-                <a className="ico hex4" href=" ">
+                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg">
                   <i class="fa-brands fa-youtube ico3"></i>
                   <div className="tooltip">Twitter</div>
                 </a>
-                <a className="ico hex4" href=" ">
+                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1">
                   <i class="fa-brands fa-instagram ico3"></i>
                   <div className="tooltip">Dribbble</div>
                 </a>
-                <a className="ico hex4" href=" ">
+                <a className="ico hex4" href="https://twitter.com/GuildQB">
                   <i class="fa-brands fa-twitter ico3"></i>
                   <div className="tooltip">Instagram</div>
                 </a>

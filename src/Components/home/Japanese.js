@@ -129,12 +129,12 @@ const Japanese = () => {
                 /> */}
                 <Row className="left">
                   <Col xs={12} md={6}>
-                    <Button className="btnWhite ">
+                    <Button href='https://opensea.io/collection/ru-yue-kisaragi' className="btnWhite ">
                       <img width="70%" height="100%" src={Opensee} alt="..." />
                     </Button>
                   </Col>
                   <Col xs={12} md={6}>
-                    <Button className="btnWhite ">
+                    <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite ">
                       <img width="70%" height="90%" src={Discord} alt="..." />
                     </Button>
                   </Col>
@@ -144,33 +144,33 @@ const Japanese = () => {
                 </p>
 
                 <div style={{ textAlign: "left" }} className="social-icons">
-                
-                  <a className="ico hex4" href=" ">
-                    <i class="fa-brands fa-facebook ico3"></i>
-                    <div className="tooltip">Github</div>
-                  </a>
-                  <a className="ico hex4" href=" ">
-                    <i class="fa-brands fa-youtube ico3"></i>
-                    <div className="tooltip">Twitter</div>
-                  </a>
-                  <a className="ico hex4" href=" ">
-                    <i class="fa-brands fa-instagram ico3"></i>
-                    <div className="tooltip">Dribbble</div>
-                  </a>
-                  <a className="ico hex4" href=" ">
-                    <i class="fa-brands fa-twitter ico3"></i>
-                    <div className="tooltip">Instagram</div>
-                  </a>
-                
-                </div>
+               
+                <a className="ico hex4" href="https://www.tiktok.com/@guildqb">
+                  <i class="fa-brands fa-tiktok ico3"></i>
+                  <div className="tooltip">Github</div>
+                </a>
+                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg">
+                  <i class="fa-brands fa-youtube ico3"></i>
+                  <div className="tooltip">Twitter</div>
+                </a>
+                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1">
+                  <i class="fa-brands fa-instagram ico3"></i>
+                  <div className="tooltip">Dribbble</div>
+                </a>
+                <a className="ico hex4" href="https://twitter.com/GuildQB">
+                  <i class="fa-brands fa-twitter ico3"></i>
+                  <div className="tooltip">Instagram</div>
+                </a>
+               
+              </div>
               </Col>
               <Col xs={12} md={6}>
-                <Card.Img
-                  // className="images"
-                  style={{ width: "90%", borderRadius: "100px" ,marginTop:'1%' ,marginLeft:'5%' , marginBottom:'10px'}}
-                  variant="top"
-                  src={mainhero}
-                />
+              <Card.Img
+                className="mobile"
+                style={{ width: "100%", borderRadius: "100px" ,marginTop:'1%'  }}
+                variant="top"
+                src={mainhero}
+              />
               </Col>
             </Row>
   </Container>
@@ -256,7 +256,7 @@ const Japanese = () => {
 <Container>
 <div className='line'></div>
 
-  <Row>
+  <Row className='lineleft'>
     
     <Col className='left' xs={12} md={3}>
   
@@ -314,7 +314,7 @@ const Japanese = () => {
 </Container>
 
 
-<Container fluid className='blueshade'>
+<Container fluid className='blueshadeg'>
 <Container >
 <h2 style={{marginBottom:'50px'}}>News</h2>
 <Row>
@@ -397,7 +397,7 @@ const Japanese = () => {
 </Container>
 
 {/* className='sliderback' */}
-<Container fluid className='blueshade'>
+<Container fluid className='blueshadeg'>
   <h2 style={{paddingBottom:'10px',marginTop:'100px'}}>Partnership</h2>
   <Swiper
       spaceBetween={20}
