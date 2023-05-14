@@ -218,7 +218,7 @@ console.log( 'sdsd'+ typeof(language))
           {/* <Button  className='dpdown' ><span style={{fontFamily:'myFirstFont' , fontWeight:'500'}}>ENGLISH</span></Button> */}
           <Dropdown >
        
-      <Dropdown.Toggle className='dpdown' style={{fontWeight:'200',right:'20px',position:'inherit '}} variant="Warning" id="dropdown-basic">
+      <Dropdown.Toggle className='dpdown' style={{fontWeight:'200',position:'inherit '}} variant="Warning" id="dropdown-basic">
         {language}
       </Dropdown.Toggle>
       {/* style={{position:'fixed'}} */}

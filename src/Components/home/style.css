@@ -491,6 +491,25 @@ iframe#youtube {
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
 }
+/* Common styles for both mobile and web */
+.dpdown {
+	right: 20px;
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 767px) {
+	.dpdown {
+		right: 0;
+	}
+  }
+  
+  /* Media query for web */
+  @media (min-width: 768px) {
+	.dpdown {
+		right: 20px;
+	}
+  }
+  
 .cardp{
 	font-style: normal;
 	font-weight: 200;
