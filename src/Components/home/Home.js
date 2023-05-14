@@ -57,13 +57,17 @@ import clearlogo from "../../Assets/backgrounds/clearlogo.png"
 
 import $ from 'jquery';
 
+import SwiperCore, { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { PieChart } from 'react-minimal-pie-chart';
 import 'swiper/css';
 
 import Roadmap from "../roadmap/roadmap";
+SwiperCore.use([Autoplay]);
 
 const Home = () => {
+  const swiperRef = React.useRef(null);
+  const swiperRef2 = React.useRef(null);
   const Swal = require("sweetalert2");
 
   $(document).ready(function(){
@@ -112,6 +116,14 @@ const Home = () => {
     toggle_video_modal();
   });
 
+  React.useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.autoplay.start();
+    }
+    if (swiperRef2.current) {
+      swiperRef2.current.swiper.autoplay.start();
+    }
+  }, []);
 
   return (
 <>
@@ -133,12 +145,12 @@ const Home = () => {
               /> */}
               <Row className="left">
                 <Col xs={12} md={6}>
-                  <Button href='https://opensea.io/collection/ru-yue-kisaragi' className="btnWhite ">
+                  <Button href='https://opensea.io/collection/ru-yue-kisaragi' style={{background: 'rgba(255, 255, 255, 0.06)'}} className="btnWhite ">
                     <img width="70%" height="100%" src={Opensee} alt="..." />
                   </Button>
                 </Col>
                 <Col xs={12} md={6}>
-                  <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite mright">
+                  <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite mright" style={{background: 'rgba(255, 255, 255, 0.06)'}}>
                     <img width="70%" height="90%" src={Discord} alt="..." />
                   </Button>
                 </Col>
@@ -152,20 +164,20 @@ const Home = () => {
 
               <div style={{ textAlign: "left" }} className="social-icons">
                
-                <a className="ico hex4" href="https://www.tiktok.com/@guildqb">
-                  <i class="fa-brands fa-tiktok ico3"></i>
+                <a className="ico hex4 " href="https://www.tiktok.com/@guildqb" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-tiktok soc" ></i>
                   <div className="tooltip">Github</div>
                 </a>
-                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg">
-                  <i class="fa-brands fa-youtube ico3"></i>
+                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-youtube soc" ></i>
                   <div className="tooltip">Twitter</div>
                 </a>
-                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1">
-                  <i class="fa-brands fa-instagram ico3"></i>
+                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-instagram  soc"  ></i>
                   <div className="tooltip">Dribbble</div>
                 </a>
-                <a className="ico hex4" href="https://twitter.com/GuildQB">
-                  <i class="fa-brands fa-twitter ico3"></i>
+                <a className="ico hex4" href="https://twitter.com/GuildQB" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-twitter  soc"  ></i>
                   <div className="tooltip">Instagram</div>
                 </a>
                
@@ -204,10 +216,10 @@ const Home = () => {
 <Row>
     <Col style={{marginTop:'12%', paddingLeft:'50px'}} className="left" xs={12} md={6}>
       <h2 >如月-KISARAGI-</h2>
-      <p style={{fontSize:'15px',paddingBottom:'40px',paddingTop:'10px'}}>"KISARAGI" is an NFT released by GuildQB, a social web3 platform specialized in NFT games and a community of NFT game players.</p>
+      <p className='kis'>"KISARAGI" is an NFT released by GuildQB, a social web3 platform specialized in NFT games and a community of NFT game players.</p>
       <Row style={{marginTop:'20px',marginBottom:'6px'}} className='left'>
             <Col xs={12} md={6}>
-            <Button className='walletbtn exebtnwhite' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)'}}>Sold Out</Button>
+            <a href='https://www.kisaragi-guildqb.com/#/' className='walletbtn exebtnwhite' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)'}}>Sold Out</a>
             </Col>
            
           </Row>
@@ -329,9 +341,10 @@ const Home = () => {
         <Card.Title className='cardt'>GuildFi and GuildQB, the world's top gaming guilds with over 280,000 users, hold community event</Card.Title>
         <Card.Text className='cardp'>
         GuildQB, operated by Social Finance Limited, will be hosting a community event in cooperation with GuildFi, and you can participate by ...
+        <a href='https://prtimes.jp/main/html/rd/p/000000002.000109511.html' className='cardr' variant="primary">Read More</a>
         </Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>December 15, 2022, 11:41 a.m.</p>
+
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i>  December 15, 2022, 11:41 a.m.</p>
       </Card.Body>
     </Card>
   </Col>
@@ -341,9 +354,8 @@ const Home = () => {
       <Card.Body>
         <Card.Title className='cardt'>GuildQB Announces Collaboration with Polygon</Card.Title>
         <Card.Text className='cardp'>
-        GuildQB, the next generation GameFi platform operated by Social Finance Limited, is pleased to announce its collaboration with Polygon. </Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>January 17, 2023, 11:00 a.m.</p>
+        GuildQB, the next generation GameFi platform operated by Social Finance Limited, is pleased to announce its collaboration with Polygon...    <a href='https://prtimes.jp/main/html/rd/p/000000007.000109511.html' className='cardr' variant="primary">Read More</a> </Card.Text>
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> January 17, 2023, 11:00 a.m.</p>
       </Card.Body>
     </Card>
   </Col>
@@ -353,9 +365,8 @@ const Home = () => {
       <Card.Body>
         <Card.Title className='cardt'>GuildQB CEO Pyrolysis talks about the future at HANEDA EXPO: web3 guilds in a new era</Card.Title>
         <Card.Text className='cardp'>
-        Pyrolysis, CEO of Social Finance Limited's GuildQB, will be speaking at "HANEDA WEB3.0 EXPO 2023 ~The bridge to the world through ...</Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>February 8, 2023 4:50 p.m.</p>
+        Pyrolysis, CEO of Social Finance Limited's GuildQB, will be speaking at "HANEDA WEB3.0 EXPO 2023 ~The bridge to the world through ...    <a href='https://prtimes.jp/main/html/rd/p/000000017.000109511.html' className='cardr' variant="primary">Read More</a></Card.Text>
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> February 8, 2023 4:50 p.m.</p>
       </Card.Body>
     </Card>
   </Col>
@@ -365,9 +376,8 @@ const Home = () => {
       <Card.Body>
         <Card.Title className='cardt'>GuildQB Sponsors Offline Event between Elemental Knight Online and Kaika Digital Group</Card.Title>
         <Card.Text className='cardp'>
-        GuildQB, operated by Social Finance Limited, is pleased to announce its sponsorship of the Elemental Knight Online and Kaika Digital  ...</Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>March 13, 2023, 11:02 a.m.</p>
+        GuildQB, operated by Social Finance Limited, is pleased to announce its sponsorship of the Elemental Knight Online and Kaika Digital  ...    <a className='cardr' variant="primary">Read More</a></Card.Text>
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> March 13, 2023, 11:02 a.m.</p>
       </Card.Body>
     </Card>
   </Col>
@@ -377,9 +387,9 @@ const Home = () => {
       <Card.Body>
         <Card.Title className='cardt'>Nethergate: New incubation program opens!</Card.Title>
         <Card.Text className='cardp'>
-        GuildQB, operated by Social Finance Limited, is pleased to announce that it will host the incubation program "Nethergate" in ...</Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>March 25, 2023, 12:12 p.m.</p>
+        GuildQB, operated by Social Finance Limited, is pleased to announce that it will host the incubation program "Nethergate" in ...    <a href='https://prtimes.jp/main/html/rd/p/000000023.000109511.html' className='cardr' variant="primary">Read More</a></Card.Text>
+        
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> March 25, 2023, 12:12 p.m.</p>
       </Card.Body>
     </Card>
   </Col>
@@ -389,28 +399,35 @@ const Home = () => {
       <Card.Body>
         <Card.Title className='cardt'>NFT "KISARAGI" published by GuildQB sold out in 37 minutes!</Card.Title>
         <Card.Text className='cardp'>
-        GuildQB, a Web3 gaming guild operated by Social Finance Limited, is pleased to announce that its recently issued KISARAGI - KISARAGI, a uniquely ... </Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>February 24, 2023, 10:49 p.m.</p>
+        GuildQB, a Web3 gaming guild operated by Social Finance Limited, is pleased to announce that its recently issued KISARAGI - KISARAGI, a uniquely ...    <a href='https://prtimes.jp/main/html/rd/p/000000020.000109511.html' className='cardr' variant="primary">Read More</a> </Card.Text>
+        
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> February 24, 2023, 10:49 p.m.</p>
       </Card.Body>
     </Card>
   </Col>
 </Row>
-<Button className='walletbtn' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)',width:'auto'}}>Read More</Button>
+<Button className='walletbtn' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)',width:'auto'}}><i style={{marginRight:'10px'}} class="fa-brands fa-medium"></i> Read More</Button>
 </Container>
 </Container>
 
 {/* className='sliderback' */}
 <Container fluid className='blueshadeg'>
 {/* <Container fluid  > </Container> */}
-  <h2 style={{paddingBottom:'10px',marginTop:'100px'}}>Partnership</h2>
+  <h2 style={{paddingBottom:'10px'}}>Partnership</h2>
   <Swiper
-      spaceBetween={20}
-      slidesPerView={'auto'}
+      ref={swiperRef}
+      spaceBetween={0}
+      slidesPerView={'5'}
       onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={(swiper) => console.log(swiper)} 
+      loopedSlides={100} // Set a large number of additional slides
+       autoplay={{
+        delay: 0,
+        disableOnInteraction: false,
+      }}
+      speed={2000} // Adjust the speed as desired
     >
-      <SwiperSlide>
+      <SwiperSlide >
       <div class="hex4">
         <div class="card__content">
           <img width='100%' height='100%' style={{borderRadius:'inherit'}} src={c1} alt='imagem' title='imagem' />
@@ -469,10 +486,17 @@ const Home = () => {
       </SwiperSlide>    
     </Swiper>
     <Swiper
-      spaceBetween={20}
-      slidesPerView={'auto'}
+      ref={swiperRef2}
+      spaceBetween={0}
+      slidesPerView={'5.5'}
       onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={(swiper) => console.log(swiper)}   
+      loopedSlides={100} // Set a large number of additional slides
+      autoplay={{
+       delay: 0,
+       disableOnInteraction: false,
+     }}
+     speed={2000} // Adjust the speed as desired
     >
       <SwiperSlide>
       <div class="hex4">
@@ -532,6 +556,9 @@ const Home = () => {
       </div>
       </SwiperSlide>    
     </Swiper>
+    <Container style={{marginBottom:'-100px',marginTop:'15%',border:'1px solid' , borderColor:'#249CFC',borderRadius:'71px',height:'76px',background: 'rgba(18, 7, 49, 0.47)',backdropFilter: 'blur(10px)'}}>
+    <span className='footertext' style={{top:'25%',position:'relative'}}>© Copyright 2023 GuildQB. All rights reserved</span>
+  </Container>
 </Container>
 </>
   );

@@ -25,6 +25,11 @@
 	font-size: 58px;
 	line-height: 116.5%;
 	letter-spacing: 0.02em;
+	background: linear-gradient(91.72deg, #FFFFFF -4.27%, #B8DFFF 46.45%, #FFD8FB 95.09%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent; 
   }
   
   h2 {
@@ -176,6 +181,11 @@ flex-grow: 0;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover; */
+	background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0)),
+    url('../../Assets/backgrounds/GuildQBbackground/gradient.png');
+	background-repeat: no-repeat;
+	background-position: center;
 	height: fit-content;}
 
 
@@ -381,6 +391,28 @@ flex-grow: 0;
 
 
 }
+/* Common styles for both mobile and web */
+.soc {
+	margin-top: 9.5px;
+	font-size: 30px;
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 767px) {
+	.soc {
+	  margin-top: -3px;
+	  margin-left: -5px;
+	}
+  }
+  
+  /* Media query for web */
+  @media (min-width: 768px) {
+	.soc {
+		margin-top: 11.5px;
+		margin-left: 3px;
+	}
+  }
+  
 /* Mobile Layout Tweaks */
 @media (max-width: 640px) {
 	.social-icons {
@@ -461,22 +493,21 @@ iframe#youtube {
 }
 .cardp{
 	font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 150%;
-/* or 21px */
-
-margin-bottom: 0px;
-letter-spacing: 0.01em;
-
-/* White */
-
-color: #FFFFFF;
+	font-weight: 200;
+	font-size: 10px;
+	line-height: 150%;
+	/* or 21px */
+	
+	letter-spacing: 0.01em;
+	
+	/* White */
+	
+	color: #FFFFFF;
 }
 .cardr{
 	font-style: normal;
-font-weight: 400;
-font-size: 14px;
+font-weight: 200;
+font-size: 10px;
 line-height: 150%;
 /* identical to box height, or 21px */
 border: 0px;
@@ -491,19 +522,21 @@ background-clip: text;
 text-fill-color: transparent;
 }
 .cardt{
+	font-family: myFirstFont;
 	font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 26px;
-
-/* White */
-
-color: #FFFFFF;
+	font-weight: 700 !important;
+	font-size: 15px !important;
+	line-height: 18px;
+	
+	/* White */
+	
+	color: #FFFFFF;
 }
-.cardD{
+.cardd{
+	font-family: myFirstFont;
 	font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 10px;
 line-height: 150%;
 /* identical to box height, or 21px */
 
@@ -518,11 +551,11 @@ color: #C6C6C6;
 	box-sizing: border-box;
 
 	text-align: left;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 18rem;
-	height: 455px;
+	height: 350px;
 	
 	background: rgba(0, 0, 0, 0.06);
 	backdrop-filter: blur(10px);
@@ -536,7 +569,7 @@ color: #C6C6C6;
 }
 
 .card__content {
-  background: rgb(5, 6, 45);
+  background: rgb(0, 255, 255);
   border-radius: 43px;
   width: 100%;
   height: 100%;
@@ -560,8 +593,8 @@ border-radius: 71px;
 }
 
 .hex4 {
-	background: blue;
-	width: 70%;
+	background: rgb(0, 255, 255);
+	width: 60%;
 	/* border: 1px solid;
 
     border-color:#249CFC ; */
@@ -633,9 +666,9 @@ border-color: #00D1FF !important;
     margin: -13px -15px;
 }
 .pra{
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 110%;
-	font-weight: 200;
+	font-weight: 100;
 }
 .gameplay{ 
 	background-image:
@@ -1326,17 +1359,36 @@ border-color: #00D1FF !important;
   .mainmob{
 	display: none;
   }
-  @media only screen and (max-width: 915px) {
+  .kis{
+	font-family: myFirstFont;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 150%;
+	/* or 24px */
 
+	letter-spacing: 0.01em;
+
+	/* White */
+
+	color: #FFFFFF;
+  }
+  @media only screen and (max-width: 915px) {
+	.ico6{
+
+	}
 	h1{
 		font-family: myFirstFont;
 		font-style: normal;
 		font-weight: 800;
 		font-size: 36px;
 		line-height: 116.5%;
-		/* or 42px */
-		
 		letter-spacing: 0.02em;
+		background: linear-gradient(91.72deg, #FFFFFF -4.27%, #B8DFFF 46.45%, #FFD8FB 95.09%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent; 
 	  }
 	  
 	  h2 {
@@ -1444,6 +1496,7 @@ letter-spacing: 0.02em;
 		margin-bottom: 3%;
 		/* padding: 0.8em 1.3em 0.8em 0.9em; */
 		float: left;
+		border-color: rgba(242, 0, 220, 0.1005);
 		/* border-color: rgba(242, 0, 220, 0.1005); */
 	}
 	.hding{
@@ -1470,7 +1523,7 @@ letter-spacing: 0.02em;
 		/* padding: 12px 20px 14px 1px; */
 		background: rgb(123 49 159 / 80%);
 		border-radius: 10px;
-		/* margin-right: 24px; */
+		margin-right: 0px;
 		/* margin-top: 37px; */
 		/* margin-bottom: 20px; */
 		/* margin-right: 24px; */

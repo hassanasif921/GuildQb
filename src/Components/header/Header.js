@@ -133,8 +133,8 @@ console.log( 'sdsd'+ typeof(language))
          <Link to={'/blogpage'}><Card.Img style={{ width: '63px'}} variant="top" src={mobIcons} /></Link> 
           </div>
         </Col>
-        <Col xs={7}>
-        <Button  className='walletbtnmob'><i className="fas fa-wallet"><span style={{fontFamily:'myFirstFont', fontStyle:'initial',fontWeight:'200'}}>CONNECT WALLET</span></i></Button>
+        <Col xs={7} style={{paddingLeft:'17px'}}>
+        <Button  className='walletbtnmob'><i className="fas fa-wallet"><span style={{fontFamily:'myFirstFont', fontStyle:'initial',fontWeight:'200'}}>&nbsp;&nbsp;CONNECT</span></i></Button>
         </Col>
         <Col xs={2}>
         <button
@@ -149,7 +149,7 @@ console.log( 'sdsd'+ typeof(language))
         aria-expanded={Expend}
         aria-label="Toggle navigation"
       >
-        -<br />-<br />-
+       <i style={{fontSize:'20px'}} class="fa-solid fa-bars ico3"></i>
         {/* <span className="navbar-toggler-icon" /> */}
       </button>
       <button
@@ -164,7 +164,7 @@ console.log( 'sdsd'+ typeof(language))
         aria-expanded={Expend}
         aria-label="Toggle navigation"
       >
-       X
+         <i style={{fontSize:'20px'}} class="fa-solid fa-xmark ico3"></i>
                {/* <span className="navbar-toggler-icon" /> */}
       </button>
         </Col>
@@ -218,7 +218,7 @@ console.log( 'sdsd'+ typeof(language))
           {/* <Button  className='dpdown' ><span style={{fontFamily:'myFirstFont' , fontWeight:'500'}}>ENGLISH</span></Button> */}
           <Dropdown >
        
-      <Dropdown.Toggle className='dpdown' style={{fontWeight:'200'}} variant="Warning" id="dropdown-basic">
+      <Dropdown.Toggle className='dpdown' style={{fontWeight:'200',right:'20px',position:'inherit '}} variant="Warning" id="dropdown-basic">
         {language}
       </Dropdown.Toggle>
       {/* style={{position:'fixed'}} */}
@@ -231,7 +231,7 @@ console.log( 'sdsd'+ typeof(language))
           </li>
           {/* <i className="fas fa-angle-down"></i> */}
           <li style={{marginLeft:'2px'}} onClick={clickAccount} className="nav-item">
-         <Button  className='walletbtn'><i className="fas fa-wallet"><span style={{fontFamily:'myFirstFont', fontStyle:'initial',fontWeight:'200'}}>CONNECT WALLET</span></i></Button>
+         <Button  className='walletbtn'><i className="fas fa-wallet" style={{color:'white'}}><span style={{fontFamily:'myFirstFont', fontStyle:'initial',fontWeight:'200',color:'white'}}>&nbsp;&nbsp;CONNECT WALLET</span></i></Button>
           </li>
       
         </ul>

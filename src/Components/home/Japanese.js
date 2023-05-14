@@ -53,13 +53,17 @@ import clearlogo from "../../Assets/backgrounds/clearlogo.png"
 
 import $ from 'jquery';
 
+import SwiperCore, { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { PieChart } from 'react-minimal-pie-chart';
 import 'swiper/css';
 
 import Roadmap from "../roadmap/roadmap";
+SwiperCore.use([Autoplay]);
 
 const Japanese = () => {
+  const swiperRef = React.useRef(null);
+  const swiperRef2 = React.useRef(null);
   const Swal = require("sweetalert2");
 
   $(document).ready(function(){
@@ -108,6 +112,15 @@ const Japanese = () => {
     toggle_video_modal();
   });
 
+  React.useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.autoplay.start();
+    }
+    if (swiperRef2.current) {
+      swiperRef2.current.swiper.autoplay.start();
+    }
+  }, []);
+
 
   return (
 <>
@@ -129,12 +142,12 @@ const Japanese = () => {
                 /> */}
                 <Row className="left">
                   <Col xs={12} md={6}>
-                    <Button href='https://opensea.io/collection/ru-yue-kisaragi' className="btnWhite ">
+                    <Button href='https://opensea.io/collection/ru-yue-kisaragi' style={{background: 'rgba(255, 255, 255, 0.06)'}} className="btnWhite ">
                       <img width="70%" height="100%" src={Opensee} alt="..." />
                     </Button>
                   </Col>
                   <Col xs={12} md={6}>
-                    <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite ">
+                    <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite " style={{background: 'rgba(255, 255, 255, 0.06)'}}>
                       <img width="70%" height="90%" src={Discord} alt="..." />
                     </Button>
                   </Col>
@@ -145,20 +158,20 @@ const Japanese = () => {
 
                 <div style={{ textAlign: "left" }} className="social-icons">
                
-                <a className="ico hex4" href="https://www.tiktok.com/@guildqb">
-                  <i class="fa-brands fa-tiktok ico3"></i>
+                <a className="ico hex4" href="https://www.tiktok.com/@guildqb" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-tiktok soc"></i>
                   <div className="tooltip">Github</div>
                 </a>
-                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg">
-                  <i class="fa-brands fa-youtube ico3"></i>
+                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-youtube soc"></i>
                   <div className="tooltip">Twitter</div>
                 </a>
-                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1">
-                  <i class="fa-brands fa-instagram ico3"></i>
+                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-instagram soc"></i>
                   <div className="tooltip">Dribbble</div>
                 </a>
-                <a className="ico hex4" href="https://twitter.com/GuildQB">
-                  <i class="fa-brands fa-twitter ico3"></i>
+                <a className="ico hex4" href="https://twitter.com/GuildQB" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-twitter soc"></i>
                   <div className="tooltip">Instagram</div>
                 </a>
                
@@ -197,10 +210,10 @@ const Japanese = () => {
 <Row>
     <Col style={{marginTop:'12%', paddingLeft:'50px'}} className="left" xs={12} md={6}>
       <h2 >如月-KISARAGI-</h2>
-      <p style={{fontSize:'15px',paddingBottom:'40px',paddingTop:'10px'}}>如月-KISARAGI-はNFTゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲームプレイヤーによるコミュニティであるGuildQBが発行するNFTです。</p>
+      <p className='kis'>如月-KISARAGI-はNFTゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲームプレイヤーによるコミュニティであるGuildQBが発行するNFTです。</p>
       <Row style={{marginTop:'20px',marginBottom:'6px'}} className='left'>
             <Col xs={12} md={6}>
-            <Button className='walletbtn exebtnwhite' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)'}}>Sold Out</Button>
+            <a href='https://www.kisaragi-guildqb.com/#/' className='walletbtn exebtnwhite' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)'}}>Sold Out</a>
             </Col>
            
           </Row>
@@ -325,9 +338,10 @@ const Japanese = () => {
         <Card.Title className='cardt'>ユーザー数28万人超えを誇る世界トップゲームギルドGuildFiとGuildQBがコミュニティイベントを開催</Card.Title>
         <Card.Text className='cardp'>
         このたび、Social Finance Limitedが運営するGuildQBはGuildFiと協力してコミュニティイベントを開催します。12月18日の21：00 ...
+        <a href='https://prtimes.jp/main/html/rd/p/000000002.000109511.html' className='cardr' variant="primary">Read More</a>
         </Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>2022年12月15日 11時41分</p>
+       
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> 2022年12月15日 11時41分</p>
       </Card.Body>
     </Card>
   </Col>
@@ -337,9 +351,9 @@ const Japanese = () => {
       <Card.Body>
         <Card.Title className='cardt'>GuildQBはPolygonとのコラボレーションを発表</Card.Title>
         <Card.Text className='cardp'>
-        ​Social Finance Limitedの運営する次世代のGameFiプラットフォーム「GuildQB」は、Polygonとのコラボレーションを発表いたしま... </Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>2023年1月17日 11時00分</p>
+        ​Social Finance Limitedの運営する次世代のGameFiプラットフォーム「GuildQB」は、Polygonとのコラボレーションを発表いたしま... <a  href='https://prtimes.jp/main/html/rd/p/000000007.000109511.html' className='cardr' variant="primary">Read More</a> </Card.Text>
+
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> 2023年1月17日 11時00分</p>
       </Card.Body>
     </Card>
   </Col>
@@ -349,9 +363,8 @@ const Japanese = () => {
       <Card.Body>
         <Card.Title className='cardt'>GuildQB CEOのPyrolysisがHANEDA EXPOで語る未来：新たな時代のweb3ギルド</Card.Title>
         <Card.Text className='cardp'>
-        Social Finance Limitedが運営するGuildQBのCEO、Pyrolysis(パイロリシス)が2月11日(土)に「HANEDA WEB3.0 EXPO 2023~The bridge to ...</Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>2023年2月8日 16時50分</p>
+        Social Finance Limitedが運営するGuildQBのCEO、Pyrolysis(パイロリシス)が2月11日(土)に「HANEDA WEB3.0 EXPO 2023~The bridge to ...  <a href='https://prtimes.jp/main/html/rd/p/000000017.000109511.html  ' className='cardr' variant="primary">Read More</a></Card.Text>
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> 2023年2月8日 16時50分</p>
       </Card.Body>
     </Card>
   </Col>
@@ -361,9 +374,8 @@ const Japanese = () => {
       <Card.Body>
         <Card.Title className='cardt'>元素騎士オンラインとカイカデジタルグループのオフラインイベントにGuildQBが協賛</Card.Title>
         <Card.Text className='cardp'>
-        ​Social Finance Limitedの運営するGuildQBは2023年3月14日（火）に、新橋にあるクロスコープ新橋 セミナールームCにて開催される元素騎士オ...</Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>2023年3月13日 11時02分</p>
+        ​Social Finance Limitedの運営するGuildQBは2023年3月14日（火）に、新橋にあるクロスコープ新橋 セミナールームCにて開催される元素騎士オ...<Button className='cardr' variant="primary">Read More</Button></Card.Text>
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> 2023年3月13日 11時02分</p>
       </Card.Body>
     </Card>
   </Col>
@@ -373,9 +385,9 @@ const Japanese = () => {
       <Card.Body>
         <Card.Title className='cardt'>Nethergate: 新たなインキュベーションプログラムが開幕！</Card.Title>
         <Card.Text className='cardp'>
-        Social Finance Limitedの運営するGuildQBはモノバンドル株式会社と共同でインキュベーションプログラム「Nethergate」を開催することを発 ...</Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>2023年3月25日 12時12分</p>
+        Social Finance Limitedの運営するGuildQBはモノバンドル株式会社と共同でインキュベーションプログラム「Nethergate」を開催することを発 ...<a href='https://prtimes.jp/main/html/rd/p/000000023.000109511.html' className='cardr' variant="primary">Read More</a></Card.Text>
+        
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> 2023年3月25日 12時12分</p>
       </Card.Body>
     </Card>
   </Col>
@@ -385,25 +397,32 @@ const Japanese = () => {
       <Card.Body>
         <Card.Title className='cardt'>GuildQBの発行するNFT『如月-KISARAGI-』37分で完売！</Card.Title>
         <Card.Text className='cardp'>
-        Social Finance Limitedの運営するWeb3ゲーミングギルドのGuildQBは、このたび発行した独自の美麗グラフィックNFT「如月-KISARAGI-」がセ ... </Card.Text>
-        <Button className='cardr' variant="primary">Read More</Button>
-        <p className='cardd'>2023年2月24日 22時49分</p>
+        Social Finance Limitedの運営するWeb3ゲーミングギルドのGuildQBは、このたび発行した独自の美麗グラフィックNFT「如月-KISARAGI-」がセ ... <a href='https://prtimes.jp/main/html/rd/p/000000020.000109511.html' className='cardr' variant="primary">Read More</a> </Card.Text>
+        
+        <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> 2023年2月24日 22時49分</p>
       </Card.Body>
     </Card>
   </Col>
 </Row>
-<Button className='walletbtn' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)',width:'auto'}}>Read More</Button>
+<Button className='walletbtn' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)',width:'auto'}}><i style={{marginRight:'10px'}} class="fa-brands fa-medium"></i>Read More</Button>
 </Container>
 </Container>
 
 {/* className='sliderback' */}
 <Container fluid className='blueshadeg'>
-  <h2 style={{paddingBottom:'10px',marginTop:'100px'}}>Partnership</h2>
+  <h2 style={{paddingBottom:'10px'}}>Partnership</h2>
   <Swiper
-      spaceBetween={20}
-      slidesPerView={'auto'}
+      ref={swiperRef}
+      spaceBetween={0}
+      slidesPerView={'5'}
       onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={(swiper) => console.log(swiper)}   
+      loopedSlides={100} // Set a large number of additional slides
+      autoplay={{
+       delay: 0,
+       disableOnInteraction: false,
+     }}
+     speed={2000} // Adjust the speed as desired
     >
       <SwiperSlide>
       <div class="hex4">
@@ -464,10 +483,17 @@ const Japanese = () => {
       </SwiperSlide>    
     </Swiper>
     <Swiper
-      spaceBetween={20}
-      slidesPerView={'auto'}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+       ref={swiperRef2}
+       spaceBetween={0}
+       slidesPerView={'5.5'}
+       onSlideChange={() => console.log('slide change')}
+       onSwiper={(swiper) => console.log(swiper)}   
+       loopedSlides={100} // Set a large number of additional slides
+       autoplay={{
+        delay: 0,
+        disableOnInteraction: false,
+      }}
+      speed={2000} // Adjust the speed as desired
     >
       <SwiperSlide>
       <div class="hex4">
@@ -527,7 +553,11 @@ const Japanese = () => {
       </div>
       </SwiperSlide>    
     </Swiper>
+      <Container style={{marginBottom:'-100px',marginTop:'15%',border:'1px solid' , borderColor:'#249CFC',borderRadius:'71px',height:'76px',background: 'rgba(18, 7, 49, 0.47)',backdropFilter: 'blur(10px)'}}>
+    <span className='footertext' style={{top:'25%',position:'relative'}}>© Copyright 2023 GuildQB. All rights reserved</span>
+  </Container>
 </Container>
+
 </>
   );
 };

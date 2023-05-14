@@ -27,6 +27,8 @@ border-radius: 0px 0px 40px 40px;
     width: 100%;
     font-size: 14px;
     padding: 10px 0px;
+    margin-right: auto;
+    margin-left: 20px;
     letter-spacing: 0.05em;
 }
 
