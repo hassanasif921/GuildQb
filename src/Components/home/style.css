@@ -77,13 +77,13 @@
     linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0)),
     url('../../Assets/backgrounds/GuildQBbackground/1440\ -\ with\ gradient.png');
 	background-repeat: no-repeat;
-	background-position: center;
+	
 	background-size: cover;
 	height: fit-content;
 	width: 100%;
 	padding: 13% 0px ;
-	position: relative;
-    top: -25px;
+	position: initial;
+    margin-top: -95px;
 
 }
 .blueshadeg{
@@ -1178,12 +1178,13 @@ top: 12px; */
 	font-size: 35px;
   }
   .mright1 {
-	margin-left: -249px;
+	margin-left: 12px;
 }
 .opensea{
 	background: rgba(255, 255, 255, 0.06);
 	width:174px;
-	height:60px;
+	height:50px;
+	border: 0px;
 }
 @media screen and (max-width: 768px) {
 	.opensea {
@@ -1196,6 +1197,11 @@ top: 12px; */
 		margin-left: 0;
 		width: 100%; /* Reset the margin for mobile devices */
 	}
+}
+.leftSocial {
+	margin-top: 20px;
+	padding-bottom: 20px;
+	/* Reset the margin for mobile devices */
 }
 @media screen and (max-width: 768px) {
 	.leftSocial {

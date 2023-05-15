@@ -133,11 +133,11 @@ const Japanese = () => {
   return (
 <>
 <Container fluid className='blueshade'>
-  <Container fluid  style={{width:'90%'}}>
+  <Container fluid  style={{width:'100%'}}>
             <Row style={{ height: "100%" ,textAlign:'left' }}>
-              <Col xs={12} md={6}>
+              <Col xs={12} md={8}>
                 <h1 >
-                  Blockchain Gaming Guild QB [Quest & Battle]
+                  Blockchain Gaming<br />Guild QB, [Quest & Battle]
                 </h1>
                 <h5>
                 遊ぶ、戦う、出会う、ゲームの未来はここにある。
@@ -148,20 +148,21 @@ const Japanese = () => {
                   variant="top"
                   src={mainhero}
                 /> */}
-                <Row className="left">
-                  <Col xs={12} md={6}>
-                    <Button href='https://opensea.io/collection/ru-yue-kisaragi' style={{background: 'rgba(255, 255, 255, 0.06)'}} className="btnWhite ">
-                      <img width="70%" height="100%" src={Opensee} alt="..." />
-                    </Button>
-                  </Col>
-                  <Col xs={12} md={6}>
-                    <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite mright" style={{background: 'rgba(255, 255, 255, 0.06)'}}>
-                      <img width="70%" height="90%" src={Discord} alt="..." />
-                    </Button>
-                  </Col>
-                </Row>
+                <Row className="leftSocial">
+                <Col xs={12} md={12}>
+                  <Button href='https://opensea.io/collection/ru-yue-kisaragi'  className="opensea">
+                    <img width="80%" height="100%" src={Opensee} alt="..." />
+                  </Button>
+                  <Button href='https://discord.com/invite/BNjFBTgpMt' className="mright1 opensea" >
+                    <img width="80%" height="100%" src={Discord} alt="..." />
+                  </Button>
+                </Col>
+                {/* <Col xs={12} md={6}>
+                
+                </Col> */}
+              </Row>
                 <p className="para">
-                GuildQBは、Web3ゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲームプレイヤーによるコミュニティです
+                GuildQBは、Web3ゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲー<br />ムプレイヤーによるコミュニティです
                 </p>
 
                 <div style={{ textAlign: "left" }} className="social-icons">
@@ -185,7 +186,7 @@ const Japanese = () => {
                
               </div>
               </Col>
-              <Col xs={12} md={6}>
+              <Col xs={12} md={4}>
               <Card.Img
                 className="mobile"
                 style={{ width: "100%", borderRadius: "100px" ,marginTop:'1%'  }}

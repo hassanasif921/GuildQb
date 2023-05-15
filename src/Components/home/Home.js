@@ -153,16 +153,17 @@ const Home = () => {
                 src={mainhero}
               /> */}
               <Row className="leftSocial">
-                <Col xs={12} md={6}>
+                <Col xs={12} md={12}>
                   <Button href='https://opensea.io/collection/ru-yue-kisaragi'  className="opensea">
                     <img width="80%" height="100%" src={Opensee} alt="..." />
                   </Button>
-                </Col>
-                <Col xs={12} md={6}>
                   <Button href='https://discord.com/invite/BNjFBTgpMt' className="mright1 opensea" >
                     <img width="80%" height="100%" src={Discord} alt="..." />
                   </Button>
                 </Col>
+                {/* <Col xs={12} md={6}>
+                  
+                </Col> */}
               </Row>
               <p className="para">
                 GuildQB is the singularity point from web 2.0 to web 3.0 as a
