@@ -36,7 +36,7 @@ import c77 from '../../Assets/General images/x1/block 4 - characters/photo-77.pn
 import c88 from '../../Assets/General images/x1/block 4 - characters/photo-88.png'
 import c99 from '../../Assets/General images/x1/block 4 - characters/photo-99.png'
 import main from '../../Assets/General images/x1/block 4 - characters/main.png'
-import mainmob from '../../Assets/backgrounds/Capture.png'
+import mainmob from '../../Assets/backgrounds/mainmob.png'
 
 
 import mainhero from '../../Assets/backgrounds/herologo.png'
@@ -475,7 +475,6 @@ const Home = () => {
       </div>
   </Col>
 </Row> */}
-
   <Swiper
       // ref={swiperRef}
       spaceBetween={-20}

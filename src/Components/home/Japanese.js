@@ -34,12 +34,12 @@ import c77 from '../../Assets/General images/x1/block 4 - characters/photo-77.pn
 import c88 from '../../Assets/General images/x1/block 4 - characters/photo-88.png'
 import c99 from '../../Assets/General images/x1/block 4 - characters/photo-99.png'
 import main from '../../Assets/General images/x1/block 4 - characters/main.png'
-import mainmob from '../../Assets/General images/x1/block 4 - characters/mainmob.png'
+import mainmob from '../../Assets/backgrounds/mainmob.png'
 import box from '../../Assets/backgrounds/backgrounds/boxphoto.png'
 import mainhero from '../../Assets/backgrounds/herologo.png'
 import Opensee from "../../Assets/backgrounds/opensea.png";
 import Discord from "../../Assets/backgrounds/discord.png";
-import c6 from '../../Assets/General images/x1/block 4 - characters/photo.png'
+import c6 from '../../Assets/General images/x1/block 4 - characters/photo-6.png'
 import ico1 from '../../Assets/General images/x1/partners logo/Frame 78.png'
 import ico2 from '../../Assets/General images/x1/partners logo/image 10.png'
 import ico3 from '../../Assets/General images/x1/partners logo/image 11.png'

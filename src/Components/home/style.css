@@ -445,8 +445,11 @@ flex-grow: 0;
   /* Media query for mobile */
   @media (max-width: 767px) {
 	.soc {
-	  top: -7px;
-	  margin-left: -7px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 2px;
+		font-size: 25px;
 	}
   }
 
