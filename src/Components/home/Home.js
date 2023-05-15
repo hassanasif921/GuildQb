@@ -155,10 +155,10 @@ const Home = () => {
               <Row className="leftSocial">
                 <Col xs={12} md={12}>
                   <Button href='https://opensea.io/collection/ru-yue-kisaragi'  className="opensea">
-                    <img width="80%" height="100%" src={Opensee} alt="..." />
+                    <img  src={Opensee} alt="..." className='openzep'/>
                   </Button>
                   <Button href='https://discord.com/invite/BNjFBTgpMt' className="mright1 opensea" >
-                    <img width="80%" height="100%" src={Discord} alt="..." />
+                    <img  src={Discord} alt="..."  className='openzep'/>
                   </Button>
                 </Col>
                 {/* <Col xs={12} md={6}>

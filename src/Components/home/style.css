@@ -429,7 +429,7 @@ position: relative;
   /* Media query for mobile */
   @media (max-width: 767px) {
 	.soc {
-	  top: -5px;
+	  top: -7px;
 	  margin-left: -7px;
 	}
   }
@@ -1185,7 +1185,18 @@ top: 12px; */
 	width:174px;
 	height:50px;
 	border: 0px;
+	
 }
+.openzep{
+	width:80%;
+	height: 100%
+	}
+	@media screen and (max-width: 768px) {
+		.openzep {
+			margin-left: 0;
+			width: 60%; /* Reset the margin for mobile devices */
+		}
+	}
 @media screen and (max-width: 768px) {
 	.opensea {
 		margin-left: 0;

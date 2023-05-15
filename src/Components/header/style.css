@@ -55,7 +55,19 @@ h2.center-logo {
 #navbarSupportedContent {
     justify-content: center;
 }
-ul.navbar-nav {}
+ul.navbar-nav {
+   
+}
+.nab{
+    margin-right: 180px;
+    margin-left:  auto;
+}
+@media (max-width: 767px) {
+	.nab {
+        margin-right: 0;
+        margin-left:  auto;
+	}
+  }
 ul.navbar-nav li.nav-item {
     margin-right: 2px;
 }
