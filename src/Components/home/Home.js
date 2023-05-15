@@ -9,6 +9,13 @@ import { Link } from "react-router-dom";
 import Video from '../../Assets/official.MP4'
 import image1 from '../../Assets/General images/x2/Block 3.png'
 import piechart from '../../Assets/General images/x1/piechart.png'
+import one from '../../Assets/1.PNG'
+import two from '../../Assets/2.PNG'
+import three from '../../Assets/three.PNG'
+import six from '../../Assets/six.png'
+import four from '../../Assets/four.PNG'
+import five from '../../Assets/five.PNG'
+
 import c1 from '../../Assets/General images/x1/block 4 - characters/photo-1.png'
 import c2 from '../../Assets/General images/x1/block 4 - characters/photo-2.png'
 import c3 from '../../Assets/General images/x1/block 4 - characters/photo-3.png'
@@ -69,7 +76,9 @@ const Home = () => {
   const swiperRef = React.useRef(null);
   const swiperRef2 = React.useRef(null);
   const Swal = require("sweetalert2");
-
+  const handleClick = () => {
+    window.location.href='https://www.kisaragi-guildqb.com/#/';
+  }
   $(document).ready(function(){
 
     // pass the YouTube video ID into the iframe template on click/tap
@@ -218,8 +227,13 @@ const Home = () => {
       <h2 >如月-KISARAGI-</h2>
       <p className='kis'>"KISARAGI" is an NFT released by GuildQB, a social web3 platform specialized in NFT games and a community of NFT game players.</p>
       <Row style={{marginTop:'20px',marginBottom:'6px'}} className='left'>
-            <Col xs={12} md={6}>
-            <a href='https://www.kisaragi-guildqb.com/#/' className='walletbtn exebtnwhite' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)'}}>Sold Out</a>
+            <Col xs={12} md={12}>
+            <button onClick={handleClick} className='walletbtn soldout' ><span style={{textAlign:'center',marginLeft: '35%',
+   fontWeight: '700',
+    fontSize: '16px',
+   lineHeight: '150%',
+   textAlign: 'center',
+    textTransform: 'uppercase'}}>Sold Out</span></button>
             </Col>
            
           </Row>
@@ -336,7 +350,7 @@ const Home = () => {
 <Row>
   <Col xs={12} md={4}>
   <Card className='crd'>
-      <Card.Img style={{borderRadius:'40px'}} variant="top" src="https://s3-alpha-sig.figma.com/img/0b1e/7356/1a0fc69637871804ab4f71aeb0b182c3?Expires=1684108800&Signature=e67k~tKv-HL8TqyhkJ9ewyKubHZF~qkjNE-QbvzrCGoRmd97F76G52Jv96UtoOkaXAZzd1CykXkAsgBV~Wgcjf9jtkqsP0MgRtdQfIMt8iwayt5rFnGx47gRpFuiffXArlrvqVi5IXKiin5ekWMhJWwwAXR0EmRy-sE8uMxN9N~2ibkreWNtWKuofQsr3WQtG4Ly0YZe5q4aJBHV3u7fZhkJwsmFxk-y2EnxAr~vhI3pW~illmk87-GRNPYN53SNB1mW8nKnRC85w6Nv09ytm2EGSyMr5zcPEuStxVAb-sTLiKnkv6pW1FhESV9LdZTh8xnyYeIoWpIn8VXPoxlKvg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+      <Card.Img style={{borderRadius:'40px'}} variant="top" src={one} />
       <Card.Body>
         <Card.Title className='cardt'>GuildFi and GuildQB, the world's top gaming guilds with over 280,000 users, hold community event</Card.Title>
         <Card.Text className='cardp'>
@@ -350,7 +364,7 @@ const Home = () => {
   </Col>
   <Col xs={12} md={4}>
   <Card className='crd'>
-      <Card.Img style={{borderRadius:'40px'}} variant="top" src="https://s3-alpha-sig.figma.com/img/c9f6/ccb7/06371d9e8dfce9bbaa332ee074d84edf?Expires=1684108800&Signature=G94zw-cUbPs6FrUUqgk8CCmpyymz1qkVNmTJGhpwnmiqzFZpYlzsTb-nf9wBqdt64uSDm7qJtdIqWrSzZxz7KSpZITVOq31YAapEBqWaf5~bJNf-upZrSumOCPijhoC4VnrAOSrltf0YDpN4NZVcD9c5uf4O48I-35mQh6EbcD1yfikA2VkhtpEdMBbVPs5IxSR0qaJDfbu3RK~4kfIAciowRK36VgEdd0mqc3iZFlhcMAnczO3SWL7sNprNJJG7QTbbmZCj9vrqbu7OCMoWwJkddh4hsD8Q0wxQzb0it02NqtFf~1Nk7uRGFssig2wfU66rWzwiIplhJqTBl1uMPA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+      <Card.Img style={{borderRadius:'40px'}} variant="top" src={two} />
       <Card.Body>
         <Card.Title className='cardt'>GuildQB Announces Collaboration with Polygon</Card.Title>
         <Card.Text className='cardp'>
@@ -361,7 +375,7 @@ const Home = () => {
   </Col>
   <Col xs={12} md={4}>
   <Card className='crd'>
-      <Card.Img style={{borderRadius:'40px'}} variant="top" src="https://s3-alpha-sig.figma.com/img/6ca0/d7a7/53f6b200d0b4cebeb73e63c98dc7aae0?Expires=1684108800&Signature=pUqDTSkfCmS83gSUl94LRKr5VcVM1fvomghWQoY-BAR4Jg8Nc3~RpWPSzXQ-ILSK3dEJaAv3uI8BhpGGeo05QROnhBpT9Apz2bI~SDCLdKtj8sXbw8ApqShf17N0DRO79VeYd2jpUYK2qbBX607Y6oRWBr3dd5oms8jxO8JBDV76aV1w63RlXb0lkcy4JFnhV0tf6kAAP~RbCfBYB-ebLTJ3DcClfIyuE2bc6tDszG6YjmCj0TZmagv8j4QofsVN6M~SEZ7pRCVcMG8zvsgTz0djsitoBPhobIAFxzwZxyUPcklds7qd1qNsbmk72sXN~z6NMvuSVRG5BlTeEoLnQg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+      <Card.Img style={{borderRadius:'40px'}} variant="top" src={three} />
       <Card.Body>
         <Card.Title className='cardt'>GuildQB CEO Pyrolysis talks about the future at HANEDA EXPO: web3 guilds in a new era</Card.Title>
         <Card.Text className='cardp'>
@@ -372,18 +386,18 @@ const Home = () => {
   </Col>
   <Col xs={12} md={4}>
   <Card className='crd'>
-      <Card.Img style={{borderRadius:'40px'}} variant="top" src="https://s3-alpha-sig.figma.com/img/c9c9/2c82/1ab46835e34b9caa72c08cdd451c05ea?Expires=1684108800&Signature=ndYyaFUHiMq8cI0NaiK0FhxrX4PFOIp0ECOaVPy8kW5QGvRHZRMq1OeXvQ~x5zkk5kquWsGI6Uau~unMczJ1HnmrnJE4NukAXmmIzR7AAsWo9fpLPkXrKsH~gXzHJri2RKFFBCYoaOeRXF6N7fMvegKN5XX64FGWCtYAiBU28DtHDuNk35bGSEAqZyHEJJKBEumNMXw5X1vRl2OkPHaYBLJZ~w7CnQGwg8m6KnXrmmkCOa8xC54yXY0DAv2Uru~RMSLa2jzS21cJ8rzhcR0pkEu6tR2LRhuheVZ7JPTLifOhX7X7gPHJikgQK1QMiN0Cp8z-J1G~mO-dPvaQykn0-g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+      <Card.Img style={{borderRadius:'40px'}} variant="top" src={six} />
       <Card.Body>
         <Card.Title className='cardt'>GuildQB Sponsors Offline Event between Elemental Knight Online and Kaika Digital Group</Card.Title>
         <Card.Text className='cardp'>
-        GuildQB, operated by Social Finance Limited, is pleased to announce its sponsorship of the Elemental Knight Online and Kaika Digital  ...    <a className='cardr' variant="primary">Read More</a></Card.Text>
+        GuildQB, operated by Social Finance Limited, is pleased to announce its sponsorship of the Elemental Knight Online and Kaika Digital  ...    <a href='https://prtimes.jp/main/html/rd/p/000000022.000109511.html' className='cardr' variant="primary">Read More</a></Card.Text>
         <p className='cardd'><i style={{marginRight:'10px'}} class="fa-solid fa-clock ico6"></i> March 13, 2023, 11:02 a.m.</p>
       </Card.Body>
     </Card>
   </Col>
   <Col xs={12} md={4}>
   <Card className='crd'>
-      <Card.Img style={{borderRadius:'40px'}} variant="top" src="https://s3-alpha-sig.figma.com/img/33a0/7c81/05080b156414b5b5e403f60ddee8bac9?Expires=1684108800&Signature=deaOzsHb2qgv~vYdQk-FcqPSe07UiDTBfuCGNkVpIzqkQfZ02PJDqTBFWNCOWhpML~tZ1Nz-08cIXLXPQtIRCs3JXOkqBwe2V73Pn7oLaXpqbeeUnVMq0VZ~KIZBdXNOwmbtSbDz-bkmw-HwkY-EzUz64bOwsRxc5~0HYbi7csyWKws~onxrJ9tBHfcacfu2z2h73Q-74cYTihshQpkHHvxhzMo-92m9YgLu8HeBoyLAojoCn~oyjNjmJEabW3cBUw7EIvuyRyU1h7b00D6-B5qs5quG5D7oinIhwEeT7hkW7qinmPSg-h53OnpP7ZTKEnPkuqnD-hC1DgVgqgVncw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+      <Card.Img style={{borderRadius:'40px'}} variant="top" src={four} />
       <Card.Body>
         <Card.Title className='cardt'>Nethergate: New incubation program opens!</Card.Title>
         <Card.Text className='cardp'>
@@ -395,7 +409,7 @@ const Home = () => {
   </Col>
   <Col xs={12} md={4}>
   <Card className='crd'>
-      <Card.Img style={{borderRadius:'40px'}} variant="top" src="https://s3-alpha-sig.figma.com/img/a5e4/59f2/78fb6bd33feed9d8d6a90f0ce6830f30?Expires=1684108800&Signature=ESIvribr1svQOU~t6hKndo-N8jWUmrZNpaeMotxTY6ou1NC0Tvfx4uyM0qGhcTZDkJNIcVrftBVd8ED-g142PHe4z5jHNW9u7DpZjJRfiBU7yX~P-O9DN5bW8CjaKK7d9jbzj2ZZ0M1qJHzU8s1P3CjHyN27-VMnUZ8YEqadOzm2k42bKiQbLf0w6cTtaFCIAEi9M~NX1nivt5Z2pZOQKC7eMYKSbc8TKcW7sJzp5cj2MCrmTi7uCzbkA-Bqpj9GjOx4~j-e6irGnDmBWLPgQwfH1s1nquymQ5klsNnpvK3KWJSaxozuIJLRVjIl3JRNEC5eYdPW3TFYIil98~JJcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+      <Card.Img style={{borderRadius:'40px'}} variant="top" src={five}/>
       <Card.Body>
         <Card.Title className='cardt'>NFT "KISARAGI" published by GuildQB sold out in 37 minutes!</Card.Title>
         <Card.Text className='cardp'>
@@ -406,7 +420,7 @@ const Home = () => {
     </Card>
   </Col>
 </Row>
-<Button className='walletbtn' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)',width:'auto'}}><i style={{marginRight:'10px'}} class="fa-brands fa-medium"></i> Read More</Button>
+<a href='https://prtimes.jp/main/html/searchrlp/company_id/109511' className='walletbtn' style={{background:'linear-gradient(93.19deg, #20AFFF 5.25%, #A8E0FF 96.59%)',width:'auto'}}><i style={{marginRight:'10px'}} class="fa-brands fa-medium"></i>Read More</a>
 </Container>
 </Container>
 

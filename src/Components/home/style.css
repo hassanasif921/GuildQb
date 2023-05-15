@@ -391,10 +391,35 @@ flex-grow: 0;
 
 
 }
+.soldout {
+	background: linear-gradient(93.19deg, rgb(32, 175, 255) 5.25%, rgb(168, 224, 255) 96.59%);
+    width: 314px;
+    text-align: center;
+	height: 60px;
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 767px) {
+	.soldout {
+		width: 100%;
+		margin-left: -10px;
+	}
+  }
+  
+  /* Media query for web */
+  @media (min-width: 768px) {
+	.soldout {
+		 width: 314px;
+	}
+  }
 /* Common styles for both mobile and web */
 .soc {
 	margin-top: 9.5px;
-	font-size: 30px;
+	font-size: 20.92px;
+    text-align: center;
+	top: 6px;
+    left: 5px;
+position: relative;
   }
   
   /* Media query for mobile */
@@ -1487,6 +1512,7 @@ letter-spacing: 0.02em;
 	} */
 	.exebtnwhite{
 		margin-left: -17px;
+
 	}
 	.social-icons{
 		text-align: center !important;

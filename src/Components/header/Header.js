@@ -178,7 +178,7 @@ console.log( 'sdsd'+ typeof(language))
   
        <img className="desktoplogo" variant="top" src={Icons} />
        
-        <ul style={{marginRight:'auto',marginLeft:'auto'}} className="navbar-nav">
+        <ul style={{marginRight:'180px',marginLeft:'auto'}} className="navbar-nav">
        
           <li style={{marginRight:"10px",fontSize:'12px' , }} className="nav-item">
             <Link to={'/'} id="home" onClick={clickHome} className="nav-link active" aria-current="page">

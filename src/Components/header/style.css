@@ -64,6 +64,8 @@ ul.navbar-nav li.nav-item:last-child {
 }
 ul.navbar-nav li.nav-item a.nav-link {
     color: #fff;
+    font-size: 18px;
+    line-height: 26px;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     color: #157ee5
