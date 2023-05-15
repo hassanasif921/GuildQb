@@ -153,7 +153,7 @@ padding-top: 20px;
 	height: fit-content;
 }
 .boxshade{
-	width: 90%;
+	width: 100%;
 	background: rgba(0, 0, 0, 0.06);
 	backdrop-filter: blur(10px);
 	border: 0.5px solid;
@@ -185,8 +185,12 @@ order: 0;
 align-self: stretch;
 flex-grow: 0;
 }
+
+  
+  
+  
 .boxshade2{
-	width: 90%;
+	width: 100%;
 	background: rgba(0, 0, 0, 0.06);
 	/* backdrop-filter: blur(10px); */
 	border: 0.5px solid;
@@ -434,12 +438,7 @@ flex-grow: 0;
 
 /* Common styles for both mobile and web */
 .soc {
-	margin-top: 9.5px;
-	font-size: 20.92px;
-    text-align: center;
-	top: 6px;
-    left: 5px;
-position: relative;
+	top:22px;
 
   }
 
@@ -454,8 +453,11 @@ position: relative;
   /* Media query for web */
   @media (min-width: 768px) {
 	.soc {
-		margin-top: 11.5px;
-		margin-left: 3px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 14px;
+		font-size: 25px;
 	}
   }
 
@@ -523,10 +525,11 @@ iframe#youtube {
 }
 /* ////////////////////////////////////////////////////////////////////////////// */
 .img1{
-  width: 85%;
+  width: 90%;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-radius: 20px;
+  border-radius: 40px !important;
+  height: 472px;
 }
 /* //////////////////////////////////////////////////////////////////////////// */
 .cardsilder {
@@ -1258,7 +1261,7 @@ top: 12px; */
   }
   @media screen and (max-width: 950px) {
 	.boxshade2{
-		width: 90%;
+		width: 100%;
 		background: rgba(0, 0, 0, 0.06);
 		backdrop-filter: blur(10px);
 		border: 0.5px solid;
@@ -1381,6 +1384,9 @@ border-color: #00D1FF !important;
 	}
   }
   .ico{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 3px 13px;
 	background: rgb(123 49 159 / 80%);
 	border-radius: 10px;

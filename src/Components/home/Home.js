@@ -171,7 +171,7 @@ const Home = () => {
                 supports the seamless transition to web 3.0 and the <br />challenges
                 of the new era.
               </p>
-             
+          
               <div style={{ textAlign: "left" }} className="social-icons">
                
                 <a className="ico hex4" href="https://twitter.com/GuildQB" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px',  borderImageSource: 'linear-gradient(to left, #743ad5, #d53a9d)'}}>
@@ -220,11 +220,11 @@ const Home = () => {
 <img width='100%' className='mainmob' src={mainmob} alt='..' />
 </Container>
 <h2 >GuildQB NFT</h2>
-<Container fluid className='playearn' style={{paddingTop:'70px',paddingBottom:'150px'}}>
+<Container fluid  className='playearn' style={{paddingTop:'70px',paddingBottom:'150px'}}>
 
 <Container fluid className='boxshade'>
 <Row>
-    <Col style={{marginTop:'12%', paddingLeft:'50px'}} className="left" xs={12} md={6}>
+    <Col style={{marginTop:'12%', paddingLeft:'50px'}} className="left" xs={12} md={5}>
       <h2 >如月-KISARAGI-</h2>
       <p className='kis'>"KISARAGI" is an NFT released by GuildQB, a social web3 platform specialized in NFT games and a community of NFT game players.</p>
       <Row style={{marginTop:'20px',marginBottom:'6px'}} className='left'>
@@ -240,7 +240,7 @@ const Home = () => {
           </Row>
     </Col>
    
-    <Col xs={12} md={6}>
+    <Col xs={12} md={7}>
    
         <img className="img1" src={box} alt="..."/>
       </Col>
