@@ -27,7 +27,7 @@ import c33 from '../../Assets/General images/x1/block 4 - characters/photo-33.pn
 import c44 from '../../Assets/General images/x1/block 4 - characters/photo-44.png'
 import c55 from '../../Assets/General images/x1/block 4 - characters/photo-55.png'
 import main from '../../Assets/General images/x1/block 4 - characters/main.png'
-import mainmob from '../../Assets/General images/x1/block 4 - characters/mainmob.png'
+import mainmob from '../../Assets/backgrounds/Capture.png'
 
 import c6 from '../../Assets/General images/x1/block 4 - characters/photo.png'
 import ico1 from '../../Assets/General images/x1/partners logo/Frame 78.png'
@@ -224,7 +224,7 @@ const Home = () => {
 
 <Container fluid className='boxshade'>
 <Row>
-    <Col style={{marginTop:'12%', paddingLeft:'50px'}} className="left" xs={12} md={5}>
+    <Col style={{marginTop:'12%', paddingLeft:'50px'}} className="left" xs={12} md={6}>
       <h2 >如月-KISARAGI-</h2>
       <p className='kis'>"KISARAGI" is an NFT released by GuildQB, a social web3 platform specialized in NFT games and a community of NFT game players.</p>
       <Row style={{marginTop:'20px',marginBottom:'6px'}} className='left'>
@@ -240,7 +240,7 @@ const Home = () => {
           </Row>
     </Col>
    
-    <Col xs={12} md={7}>
+    <Col xs={12} md={6}>
    
         <img className="img1" src={box} alt="..."/>
       </Col>
