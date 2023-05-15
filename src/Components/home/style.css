@@ -637,7 +637,7 @@ color: #C6C6C6;
 }
 
 .card__content {
-  background: rgb(0, 255, 255);
+  background: rgb(19 7 50);
   border-radius: 43px;
   width: 100%;
   height: 100%;
@@ -659,10 +659,12 @@ text-transform: uppercase;
 color: #FFFFFF;
 border-radius: 71px;
 }
-
+.slide{
+	margin-right: -130px !important;
+}
 .hex4 {
 	background: rgb(0, 255, 255);
-	width: 60%;
+	width: 50%;
 	/* border: 1px solid;
 
     border-color:#249CFC ; */
@@ -1259,7 +1261,20 @@ top: 12px; */
 	margin-left: 15px;
 	margin-right: -230px;
   }
+  .svg{
+	width: 55px;
+	height: 143px;
+	/* width="55px" height="143px" */
+  }
   @media screen and (max-width: 950px) {
+	.svg{
+		width: 55px;
+		height: 43px;
+		/* width="55px" height="143px" */
+	  }
+	.slide{
+		margin-right: -30px !important;
+	}
 	.boxshade2{
 		width: 90%;
 		background: rgba(0, 0, 0, 0.06);
