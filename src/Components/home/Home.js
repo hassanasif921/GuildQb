@@ -137,13 +137,13 @@ const Home = () => {
   return (
 <>
 <Container fluid className='blueshade'>
-<Container fluid  style={{width:'100%'}}>
+<Container fluid  style={{width:'90%'}}>
           <Row style={{ height: "80%" ,textAlign:'left' }}>
             <Col xs={12} md={8}>
               <h1 className='margin' >
                 Blockchain Gaming <br />Guild QB [Quest & Battle]
               </h1>
-              <h5>
+              <h5 className='headingplay'>
                 Play, fight, meet, the future of games is here
               </h5>
               {/* <Card.Img
@@ -168,7 +168,7 @@ const Home = () => {
               <p className="para">
                 GuildQB is the singularity point from web 2.0 to web 3.0 as a
                 blockchain gaming guild.<br /> It is a gaming DAO/community that
-                supports the seamless transition to web 3.0 and the challenges<br />
+                supports the seamless transition to web 3.0 and the <br />challenges
                 of the new era.
               </p>
              
