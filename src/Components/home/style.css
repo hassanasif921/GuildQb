@@ -1188,13 +1188,21 @@ top: 12px; */
 	
 }
 .openzep{
-	width:80%;
+	width:138px;
 	height: 100%
 	}
+	.openzep1{
+		width:118px;
+		height: 100%
+		}
 	@media screen and (max-width: 768px) {
 		.openzep {
 			margin-left: 0;
-			width: 60%; /* Reset the margin for mobile devices */
+			width: 138px; /* Reset the margin for mobile devices */
+		}
+		.openzep1 {
+			margin-left: 0;
+			width: 118px; /* Reset the margin for mobile devices */
 		}
 	}
 @media screen and (max-width: 768px) {

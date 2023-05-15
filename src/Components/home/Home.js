@@ -158,7 +158,7 @@ const Home = () => {
                     <img  src={Opensee} alt="..." className='openzep'/>
                   </Button>
                   <Button href='https://discord.com/invite/BNjFBTgpMt' className="mright1 opensea" >
-                    <img  src={Discord} alt="..."  className='openzep'/>
+                    <img  src={Discord} alt="..."  className='openzep1'/>
                   </Button>
                 </Col>
                 {/* <Col xs={12} md={6}>
