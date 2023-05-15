@@ -81,7 +81,9 @@
 	background-size: cover;
 	height: fit-content;
 	width: 100%;
-	padding: 11% 0px;
+	padding: 13% 0px ;
+	position: relative;
+    top: -25px;
 
 }
 .blueshadeg{
@@ -412,6 +414,7 @@ flex-grow: 0;
 		 width: 314px;
 	}
   }
+  
 /* Common styles for both mobile and web */
 .soc {
 	margin-top: 9.5px;
@@ -420,13 +423,14 @@ flex-grow: 0;
 	top: 6px;
     left: 5px;
 position: relative;
+
   }
   
   /* Media query for mobile */
   @media (max-width: 767px) {
 	.soc {
-	  margin-top: -3px;
-	  margin-left: -5px;
+	  top: -5px;
+	  margin-left: -7px;
 	}
   }
   
@@ -1173,6 +1177,33 @@ top: 12px; */
 	margin-top: -10px;
 	font-size: 35px;
   }
+  .mright1 {
+	margin-left: -249px;
+}
+.opensea{
+	background: rgba(255, 255, 255, 0.06);
+	width:174px;
+	height:60px;
+}
+@media screen and (max-width: 768px) {
+	.opensea {
+		margin-left: 0;
+		width: 100%; /* Reset the margin for mobile devices */
+	}
+}
+@media screen and (max-width: 768px) {
+	.mright1 {
+		margin-left: 0;
+		width: 100%; /* Reset the margin for mobile devices */
+	}
+}
+@media screen and (max-width: 768px) {
+	.leftSocial {
+		margin-top: 20px;
+		padding-bottom: 20px;
+		/* Reset the margin for mobile devices */
+	}
+}
   .mright{
 		margin-left: -37px;
   }
@@ -1336,6 +1367,7 @@ border-color: #00D1FF !important;
 	font-size: 14px;
 	line-height: 150%;
 	letter-spacing: 0.01em;
+
 }
 .btnWhite{
 	background: rgba(255, 255, 255, 0.06);

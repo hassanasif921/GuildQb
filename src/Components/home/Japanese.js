@@ -166,21 +166,21 @@ const Japanese = () => {
 
                 <div style={{ textAlign: "left" }} className="social-icons">
                
-                <a className="ico hex4" href="https://www.tiktok.com/@guildqb" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
-                  <i class="fa-brands fa-tiktok soc"></i>
-                  <div className="tooltip">Github</div>
-                </a>
-                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
-                  <i class="fa-brands fa-youtube soc"></i>
+                <a className="ico hex4" href="https://twitter.com/GuildQB" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px',  borderImageSource: 'linear-gradient(to left, #743ad5, #d53a9d)'}}>
+                  <i class="fa-brands fa-twitter soc" ></i>
                   <div className="tooltip">Twitter</div>
                 </a>
-                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
-                  <i class="fa-brands fa-instagram soc"></i>
-                  <div className="tooltip">Dribbble</div>
+                <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-youtube soc" ></i>
+                  <div className="tooltip">YouTube</div>
                 </a>
-                <a className="ico hex4" href="https://twitter.com/GuildQB" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
-                  <i class="fa-brands fa-twitter soc"></i>
-                  <div className="tooltip">Instagram</div>
+                <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-instagram  soc"  ></i>
+                  <div className="tooltip">INSTAGRAM</div>
+                </a>
+                <a className="ico hex4" href="https://www.facebook.com/GuildQb/" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-facebook  soc"  ></i>
+                  <div className="tooltip">FACEBOOK</div>
                 </a>
                
               </div>

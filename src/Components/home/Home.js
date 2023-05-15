@@ -137,11 +137,11 @@ const Home = () => {
   return (
 <>
 <Container fluid className='blueshade'>
-<Container fluid  style={{width:'90%'}}>
+<Container fluid  style={{width:'100%'}}>
           <Row style={{ height: "80%" ,textAlign:'left' }}>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={8}>
               <h1 className='margin' >
-                Blockchain Gaming Guild QB [Quest & Battle]
+                Blockchain Gaming <br />Guild QB [Quest & Battle]
               </h1>
               <h5>
                 Play, fight, meet, the future of games is here
@@ -152,47 +152,47 @@ const Home = () => {
                 variant="top"
                 src={mainhero}
               /> */}
-              <Row className="left">
+              <Row className="leftSocial">
                 <Col xs={12} md={6}>
-                  <Button href='https://opensea.io/collection/ru-yue-kisaragi' style={{background: 'rgba(255, 255, 255, 0.06)'}} className="btnWhite ">
-                    <img width="70%" height="100%" src={Opensee} alt="..." />
+                  <Button href='https://opensea.io/collection/ru-yue-kisaragi'  className="opensea">
+                    <img width="80%" height="100%" src={Opensee} alt="..." />
                   </Button>
                 </Col>
                 <Col xs={12} md={6}>
-                  <Button href='https://discord.com/invite/BNjFBTgpMt' className="btnWhite mright" style={{background: 'rgba(255, 255, 255, 0.06)'}}>
-                    <img width="70%" height="90%" src={Discord} alt="..." />
+                  <Button href='https://discord.com/invite/BNjFBTgpMt' className="mright1 opensea" >
+                    <img width="80%" height="100%" src={Discord} alt="..." />
                   </Button>
                 </Col>
               </Row>
               <p className="para">
                 GuildQB is the singularity point from web 2.0 to web 3.0 as a
-                blockchain gaming guild. It is a gaming DAO/community that
-                supports the seamless transition to web 3.0 and the challenges
+                blockchain gaming guild.<br /> It is a gaming DAO/community that
+                supports the seamless transition to web 3.0 and the challenges<br />
                 of the new era.
               </p>
-
+             
               <div style={{ textAlign: "left" }} className="social-icons">
                
-                <a className="ico hex4 " href="https://www.tiktok.com/@guildqb" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
-                  <i class="fa-brands fa-tiktok soc" ></i>
-                  <div className="tooltip">Github</div>
+                <a className="ico hex4" href="https://twitter.com/GuildQB" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px',  borderImageSource: 'linear-gradient(to left, #743ad5, #d53a9d)'}}>
+                  <i class="fa-brands fa-twitter soc" ></i>
+                  <div className="tooltip">Twitter</div>
                 </a>
                 <a className="ico hex4" href="https://www.youtube.com/channel/UCkfd5R9q8RyxUYE1abTfpUg" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
                   <i class="fa-brands fa-youtube soc" ></i>
-                  <div className="tooltip">Twitter</div>
+                  <div className="tooltip">YouTube</div>
                 </a>
                 <a className="ico hex4" href="https://www.instagram.com/qb_guild/?__coig_restricted=1" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
                   <i class="fa-brands fa-instagram  soc"  ></i>
-                  <div className="tooltip">Dribbble</div>
+                  <div className="tooltip">INSTAGRAM</div>
                 </a>
-                <a className="ico hex4" href="https://twitter.com/GuildQB" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
-                  <i class="fa-brands fa-twitter  soc"  ></i>
-                  <div className="tooltip">Instagram</div>
+                <a className="ico hex4" href="https://www.facebook.com/GuildQb/" style={{background: 'linear-gradient(180deg, rgba(242, 0, 220, 0.16) 0%, rgba(130, 23, 244, 0.16) 100%)',width: '60px',display: 'inline-block',height: '60px'}}>
+                  <i class="fa-brands fa-facebook  soc"  ></i>
+                  <div className="tooltip">FACEBOOK</div>
                 </a>
                
               </div>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={4}>
               <Card.Img
                 className="mobile"
                 style={{ width: "100%", borderRadius: "100px" ,marginTop:'1%'  }}
