@@ -133,13 +133,13 @@ const Japanese = () => {
   return (
 <>
 <Container fluid className='blueshade'>
-  <Container fluid  style={{width:'100%'}}>
+  <Container fluid  style={{width:'90%'}}>
             <Row style={{ height: "100%" ,textAlign:'left' }}>
               <Col xs={12} md={8}>
-                <h1 >
-                  Blockchain Gaming<br />Guild QB, [Quest & Battle]
+                <h1 className='margin'>
+                  Blockchain Gaming<br />Guild QB [Quest & Battle]
                 </h1>
-                <h5>
+                <h5 className='headingplay'>
                 遊ぶ、戦う、出会う、ゲームの未来はここにある。
                 </h5>
                 {/* <Card.Img
@@ -148,19 +148,24 @@ const Japanese = () => {
                   variant="top"
                   src={mainhero}
                 /> */}
+               
                 <Row className="leftSocial">
                 <Col xs={12} md={12}>
                   <Button href='https://opensea.io/collection/ru-yue-kisaragi'  className="opensea">
-                    <img width="80%" height="100%" src={Opensee} alt="..." />
+                    <img  src={Opensee} alt="..." className='openzep'/>
                   </Button>
                   <Button href='https://discord.com/invite/BNjFBTgpMt' className="mright1 opensea" >
-                    <img width="80%" height="100%" src={Discord} alt="..." />
+                    <img  src={Discord} alt="..."  className='openzep1'/>
                   </Button>
                 </Col>
                 {/* <Col xs={12} md={6}>
-                
+                  
                 </Col> */}
               </Row>
+                {/* <Col xs={12} md={6}>
+                
+                </Col> */}
+              
                 <p className="para">
                 GuildQBは、Web3ゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲー<br />ムプレイヤーによるコミュニティです
                 </p>
