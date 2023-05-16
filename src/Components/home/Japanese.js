@@ -229,7 +229,7 @@ const Japanese = () => {
 <Container fluid className='playearn' style={{paddingTop:'70px',paddingBottom:'150px'}}>
 
 <Container fluid className='boxshade'>
-<Row>
+{/* <Row>
     <Col style={{marginTop:'12%', paddingLeft:'50px'}} className="left" xs={12} md={6}>
       <h2 >如月-KISARAGI-</h2>
       <p className='kis'>如月-KISARAGI-はNFTゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲームプレイヤーによるコミュニティであるGuildQBが発行するNFTです。</p>
@@ -250,8 +250,37 @@ const Japanese = () => {
    
         <img className="img1" src={box} alt="..."/>
       </Col>
-  </Row>
+  </Row> */}
+  <Row>
+            <div>
 
+            </div>
+
+            <Col className="left" xs={12} md={6}>
+              <div className='kisargi'>
+              <h2 className='kisargiheading'>如月-KISARAGI-</h2>
+              <p className='kis'>如月-KISARAGI-はNFTゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲームプレイヤーによるコミュニティであるGuildQBが発行するNFTです。</p>
+              <Row style={{ marginTop: '20px', marginBottom: '6px' }} className='left'>
+                <Col xs={12} md={12}>
+                  <button onClick={handleClick} className='walletbtn soldout' ><span style={{
+                    textAlign: 'center', marginLeft: '35%',
+                    fontWeight: '700',
+                    fontSize: '16px',
+                    lineHeight: '150%',
+                    textAlign: 'center',
+                    textTransform: 'uppercase'
+                  }}>Sold Out</span></button>
+                </Col>
+
+              </Row>
+              </div>
+            </Col>
+                  
+            <Col xs={12} md={6}>
+
+              <img className="img1" src={box} alt="..." />
+            </Col>
+          </Row>
 </Container>
 <Container fluid style={{marginTop:'50px'}} className='boxshade2'>
   <h3 style={{marginTop:'50px'}}>GuildQB Roadmap</h3>

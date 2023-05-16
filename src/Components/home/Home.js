@@ -483,7 +483,7 @@ const Home = () => {
       </div>
   </Col>
 </Row> */}
-        {/* <Swiper
+        <Swiper
       // ref={swiperRef}
       spaceBetween={-20}
       slidesPerView={'5'}
@@ -8530,7 +8530,7 @@ const Home = () => {
         </div>
       </div>
       </SwiperSlide>    
-    </Swiper> */}
+    </Swiper>
         <Container style={{ marginBottom: '-100px', marginTop: '15%', border: '1px solid', borderColor: '#249CFC', borderRadius: '71px', height: '76px', background: 'rgba(18, 7, 49, 0.47)', backdropFilter: 'blur(10px)' }}>
           <span className='footertext' style={{ top: '25%', position: 'relative' }}>© Copyright 2023 GuildQB. All rights reserved</span>
         </Container>
