@@ -259,7 +259,7 @@ const Japanese = () => {
             <Col className="left" xs={12} md={6}>
               <div className='kisargi'>
               <h2 className='kisargiheading'>如月-KISARAGI-</h2>
-              <p className='kis'>如月-KISARAGI-はNFTゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲームプレイヤーによるコミュニティであるGuildQBが発行するNFTです。</p>
+              <p className='kis'>如月-KISARAGI-はNFTゲームに特化したソーシャルWeb3プラットフォーム、およびNFTゲームプレイヤーによるコミュニティであるGuildQBが発行するNFTです</p>
               <Row style={{ marginTop: '20px', marginBottom: '6px' }} className='left'>
                 <Col xs={12} md={12}>
                   <button onClick={handleClick} className='walletbtn soldout' ><span style={{
