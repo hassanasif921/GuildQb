@@ -1,7 +1,9 @@
 
-#header {
+/* #header {
     overflow: hidden;
-}
+} */
+
+
 .navbar {
     position: initial;
     padding: -1px 0;
@@ -10,8 +12,11 @@ backdrop-filter: blur(10px);
 border-radius: 0px 0px 40px 40px;
     margin-top: 0px;
     border-bottom: 1px solid;
-    margin-bottom: 80px;
-    border-color: #8217F4;
+    /* border:none !important; */
+
+    /* margin-bottom: 80px; */
+    border-image:  linear-gradient(93.09deg, #8217F4 25.84%, #00D1FF 116.48%)1 !important;
+    /* border-color: #8217F4; */
 
     
     
@@ -26,10 +31,13 @@ border-radius: 0px 0px 40px 40px;
     margin-top: 11px;
     align-items: center;
     width: 100%;
+    margin-right: 7px;
+    margin-top: 15px !important;
+    position: relative !important;
     font-size: 14px;
     padding: 10px 0px;
-    margin-right: auto;
-    margin-left: 20px;
+    /* margin-right: auto; */
+    /* margin-left: 20px; */
     letter-spacing: 0.05em;
 }
 
@@ -223,4 +231,71 @@ border-radius: 12px;
     color: #157ee5;
     text-decoration: none;
     background-color: #f8f9fa00;
+}
+
+
+
+.stiiksy{
+    position: sticky !important;
+    top: 0px  !important;
+    z-index: 99;
+}
+
+
+
+@media  only screen and (max-width:400px){
+    /* .asjadkandk{
+        width: 190% !important;
+    } */
+
+    .positio{
+        position: relative !important;
+        left: 116px !important;
+    }
+    .myyyyy{
+        padding: 10px !important;
+    }
+}
+
+
+@media only screen and (min-width:401px) and (max-width:600px)  {
+  
+    .myyyyy{
+        padding: 10px !important;
+    }
+
+    .positio{
+        position: relative !important;
+        left: 152px !important; 
+        top: -4px !important;
+    }
+}
+
+
+
+.navbar_toggle{
+    position: relative !important;
+    top: -2px !important;
+}
+
+
+@media only screen and (min-width:700px) and (max-width:800px) {
+    .positio{
+        position: relative !important;
+        left: 31rem;
+    } 
+
+    .walletbtnmob {
+        padding: 10px 10px;
+    }
+
+    .nab {
+        margin-right: 0px;
+        margin-left: auto;
+    }
+
+    .dropdown, .dropend, .dropstart, .dropup {
+        position: relative;
+        left: 20px !important;
+    }
 }

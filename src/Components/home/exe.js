@@ -24,7 +24,6 @@
           </div>
           <div className="timeline-item-block timeline-item-block-mobile timeline-item-block-violet">
             <div className="timeline-item-time">
-              {/* <div className="timeline-item-label">Phase-2</div> */}
             </div>
             <div className="timeline-item-label-hr">
               <div className="item-dot timeline-dot">&nbsp;</div>
@@ -49,7 +48,6 @@
           </div>
           <div className="timeline-item-block timeline-item-block-blue">
             <div className="timeline-item-time">
-              {/* <div className="timeline-item-label">Phase-3</div> */}
             </div>
             <div className="timeline-item-label-hr">
               <div className="item-dot timeline-dot">&nbsp;</div>
@@ -68,7 +66,6 @@
           </div>
           <div className="timeline-item-block timeline-item-block-mobile timeline-item-block-green2">
             <div className="timeline-item-time">
-              {/* <div className="timeline-item-label">Phase-4</div> */}
             </div>
             <div className="timeline-item-label-hr">
               <div className="item-dot timeline-dot">&nbsp;</div>
@@ -84,23 +81,7 @@
               <p> Second Game「Bomb to Eran」 development</p>
             </div>
           </div>
-          {/* <div className="timeline-item-block timeline-item-block17q4 timeline-item-block-green">
-            <div className="timeline-item-time">
-              <div className="timeline-item-label">PHASE-5</div>
-            </div>
-            <div className="timeline-item-label-hr">
-              <div className="item-dot timeline-dot">&nbsp;</div>
-            </div>
-            <div className="timeline-item-label2">
-              LISTING BTCA ON EXCHANGES
-            </div>
-            <div className="timeline-item-content">
-              <p>
-                Early October, prepare full project to submit BTCA to Exchanges.
-              </p>
-              <p>Target to list on other top Exchanges such as: Hitbtc</p>
-            </div>
-          </div> */}
+        
           
          
         </div>
