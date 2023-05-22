@@ -799,7 +799,7 @@ const Japanese = () => {
               </Card>
             </Col>
           </Row>
-          <button
+          <a
             href="https://prtimes.jp/main/html/searchrlp/company_id/109511"
             className="btn btn-lg news_bbtn "
             style={{
@@ -811,7 +811,7 @@ const Japanese = () => {
           >
             <i style={{ marginRight: "10px" }} class="fa-brands fa-medium"></i>
             Read More
-          </button>
+          </a>
         </Container>
       </Container>
 
