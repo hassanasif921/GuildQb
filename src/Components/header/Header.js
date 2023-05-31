@@ -219,7 +219,7 @@ console.log( 'sdsd'+ typeof(language))
               </a>
             </li>
             <li style={{marginRight:"10px",fontSize:'12px' ,}} className="nav-item">
-              <a  href="https://guildqb.gitbook.io/guild-qb-white-paper-ver1.0/guildqb-overview/guildqbtoha" target="_blank" id="nft" onClick={clicknft} className="nav-link" >
+              <a  href="https://guildqb.gitbook.io/guildqb-wp-v1.0/" target="_blank" id="nft" onClick={clicknft} className="nav-link" >
               Dock 
               </a>
             </li>
